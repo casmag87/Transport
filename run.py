@@ -72,7 +72,7 @@ for elem in root.iter():
                         bst.insert(column_name, column_types[column_name])
 
 # Connect to PostgreSQL
-with psycopg2.connect(database="Maxville", user="postgres", password="070487", host="localhost", port="5432") as conn:
+with psycopg2.connect(database="", user="", password="", host="localhost", port="5432") as conn:
     with conn.cursor() as cur:
         # Create a table if it doesn't exist
         cur.execute("CREATE TABLE IF NOT EXISTS mytable (id SERIAL PRIMARY KEY)")
